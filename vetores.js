@@ -77,3 +77,8 @@ console.log('-----------------------------')
 for(let fruta of vetor1) {
     console.log(fruta)
 }
+
+//Forma 3: forEach()
+//O argumento do forEach
+
+vetor1.forEach(fruta => console.log(fruta))
