@@ -108,7 +108,7 @@ estadosNe.splice(1, 0, estado9)
       segunda pela primeira. 
 */
 
-let idh = (area, popu) => popu / area
+let idh = (are, popu) => popu / are
 
 /*
    3) Percorra o vetor estadosNe usando um for tradicional. Para cada estado,
@@ -119,14 +119,23 @@ let idh = (area, popu) => popu / area
       Durante este mesmo loop, elimine a propriedade 'sigla' dos objetos.
 
 */
-
+console.log('................................')
 for(let i = 0; i < estadosNe.length; i++) {
-    let res = idh(i.popu / i.area)
-    return res
-
+    let densi = idh(estadosNe[i].area, estadosNe[i].populacao)
+    /*estado1['densidade demográfica'] = densi
+    estado2['densidade demográfica'] = densi
+    estado3['densidade demográfica'] = densi
+    estado4['densidade demográfica'] = densi
+    estado5['densidade demográfica'] = densi
+    estado6['densidade demográfica'] = densi
+    estado7['densidade demográfica'] = densiestado*/
+    estadosNe[i]['densidade demográfica'] = densi
+    delete estadosNe[i].sigla
 }
 
-console.log(res)
+ console.log(estadosNe)
+
+
 
 /* 4) Escreva uma arrow function que receba um objeto. Na função, use for..in
       para extrair as propriedades e seus valores e exibi-los com console.log().
