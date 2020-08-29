@@ -30,6 +30,7 @@ estadosNe.push(estado1)
    1) Crie objetos para os demais Estados, segundo o modelo acima, e acrescente-os
       ao vetor estadosNe usando push().
 */
+
 let estado2 = {
     nome: 'Alagoas',
     sigla: 'AL',
@@ -119,15 +120,19 @@ let idh = (are, popu) => popu / are
       Durante este mesmo loop, elimine a propriedade 'sigla' dos objetos.
 
 */
-console.log('................................')
+
+console.log(estadosNe)
+
+console.log('................................01')
+
+
 for (let i = 0; i < estadosNe.length; i++) {
     let densi = idh(estadosNe[i].area, estadosNe[i].populacao)
-    estadosNe[i]['densidade demográfica'] = densi
+    estadosNe[i][`densidade demográfica`] = densi
     delete estadosNe[i].sigla
 }
 
 console.log(estadosNe)
-
 
 
 /* 4) Escreva uma arrow function que receba um objeto. Na função, use for..in
@@ -135,11 +140,27 @@ console.log(estadosNe)
 
 */
 
+console.log('...............................02')
+
+let propriedades = {}
+
+let exibir = propriedades => {
+    for(let prop in propriedades) {
+        console.log(propriedades[prop])
+    }
+} 
+
+
 /* 5) Percorra o vetor estadosNe usando for..of. Para cada objeto no vetor,
       invoque a função escrita em 4) para exibi-lo.
 
-/*
-   6)
+*/
+
+for(let estado of estadosNe) {
+    console.log(exibir([estado]))
+}
+
+/*  6)
       a) Declare um vetor vazio.
       b) Insira no vetor criado no item a) apenas o nome de cada Estado, conforme
          os dados no topo deste arquivo, um de cada vez. Faça as inserções de
@@ -150,3 +171,17 @@ console.log(estadosNe)
          já existentes, e assim por diante.
 
 */
+
+let estados = []
+
+estados.push(estado1.nome)
+estados.push(estado2.nome)
+estados.push(estado3.nome)
+estados.push(estado4.nome)
+estados.push(estado5.nome)
+estados.push(estado6.nome)
+estados.push(estado7.nome)
+estados.push(estado8.nome)
+estados.push(estado9.nome)
+estados.sort()
+console.log(estados)
