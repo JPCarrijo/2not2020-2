@@ -18,10 +18,10 @@
 let estadosNe = []
 
 let estado1 = {
-   nome: 'Sergipe',
-   sigla: 'SE',
-   area: 21915.08,
-   populacao: 2278308
+    nome: 'Sergipe',
+    sigla: 'SE',
+    area: 21915.08,
+    populacao: 2278308
 }
 
 estadosNe.push(estado1)
@@ -120,20 +120,13 @@ let idh = (are, popu) => popu / are
 
 */
 console.log('................................')
-for(let i = 0; i < estadosNe.length; i++) {
+for (let i = 0; i < estadosNe.length; i++) {
     let densi = idh(estadosNe[i].area, estadosNe[i].populacao)
-    /*estado1['densidade demográfica'] = densi
-    estado2['densidade demográfica'] = densi
-    estado3['densidade demográfica'] = densi
-    estado4['densidade demográfica'] = densi
-    estado5['densidade demográfica'] = densi
-    estado6['densidade demográfica'] = densi
-    estado7['densidade demográfica'] = densiestado*/
     estadosNe[i]['densidade demográfica'] = densi
     delete estadosNe[i].sigla
 }
 
- console.log(estadosNe)
+console.log(estadosNe)
 
 
 
@@ -149,11 +142,11 @@ for(let i = 0; i < estadosNe.length; i++) {
    6)
       a) Declare um vetor vazio.
       b) Insira no vetor criado no item a) apenas o nome de cada Estado, conforme
-         os dados no topo deste arquivo, um de cada vez. Faça as inserções de 
-         modo que o vetor final esteja em ordem alfabética. No caso, o primeiro 
+         os dados no topo deste arquivo, um de cada vez. Faça as inserções de
+         modo que o vetor final esteja em ordem alfabética. No caso, o primeiro
          Estado (Sergipe), pode ser inserido com push(), mas o segundo (Alagoas)
-         deve ser inserido com unshift(), para manter a ordem alfabética. 
-         O terceiro Estado (Rio Grande do Norte) deve ser inserido entre os dois 
+         deve ser inserido com unshift(), para manter a ordem alfabética.
+         O terceiro Estado (Rio Grande do Norte) deve ser inserido entre os dois
          já existentes, e assim por diante.
 
 */
