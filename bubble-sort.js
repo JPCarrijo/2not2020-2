@@ -42,19 +42,19 @@ console.timeEnd('teste 1')
 console.log(nums)
 console.log('.............................')
 
-//let empresas = require('./dados/15-mil-empresas.js')
-/*
+let empresas = require('./dados/15-mil-empresas.js')
+
 console.time('Teste empresas')
 bubbleSort(empresas)
 console.timeEnd('Teste empresas')
 console.log(empresas)
-*/
 
-//let nomes = require('./dados/100-mil-nomes')
-/*
+
+let nomes = require('./dados/100-mil-nomes')
+
 console.time('Teste nomes')
 bubbleSort(nomes)
 console.log('Teste nomes')
 console.log(nomes)
-*/
+
 
