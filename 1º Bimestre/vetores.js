@@ -1,3 +1,4 @@
+
 let vetor1 = []         // Forma "moderna"
 let vetor2 = Array()    // Forma "tradicional"
 
@@ -82,3 +83,7 @@ for(let fruta of vetor1) {
 //O argumento do forEach
 
 vetor1.forEach(fruta => console.log(fruta))
+
+if(a == b) console.log('Verde')
+else if (a < b) console.log('Amarelo')
+else console.log('Vermelho')

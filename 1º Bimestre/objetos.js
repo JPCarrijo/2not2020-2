@@ -7,7 +7,7 @@ let pessoal2 = new Object() //Tradicional
 let pessoal3 = {
         nome: 'João das Couves',
         naturalidade: 'Franca/SP', "Data de Nascimento": '1997-11-03',
-        estudante: true
+        estudante_fatec: true
 }
 
 // Acessando uma propriedade de um objeto
