@@ -29,6 +29,7 @@ let tchonga = {
     tipo: 'T'
 }
 
+// Algoritmos
 const area = forma => {
     switch(forma.tipo) {
         case 'R':
