@@ -1,4 +1,4 @@
-const Stack = require('./lib/Stack')
+const Stack = require('./lib/Stack2')
 
 let pilha = new Stack()
 
@@ -17,7 +17,7 @@ while(pilha.size() > 0) {
 
 console.log(pilha)
 
-console.log(inverso);
+//console.log(inverso);
 
 
 
